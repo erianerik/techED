@@ -11,6 +11,7 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    position: relative;
   }
   
   /* Sections
@@ -22,12 +23,14 @@
   
   body {
     margin: 0;
+    position: relative;
   }
   
 
   html, body {
     width: 100%;
     height: 100%;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -353,4 +356,18 @@
   
   [hidden] {
     display: none;
+  }
+
+  .button-pattern {
+    box-sizing: border-box;
+    display: inline-block;
+    width: fit-content;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+    background-color: #fff;
   }

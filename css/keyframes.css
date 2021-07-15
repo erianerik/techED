@@ -34,3 +34,14 @@
         transform: translateY(0);
     }
 }
+
+@keyframes opacity-slide-down {
+    0% {
+        transform: translateY(-25px);
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

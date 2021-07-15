@@ -1,0 +1,53 @@
+.about-us {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us__section {
+    width: 80%; 
+    height: calc(100% - 30px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 1rem;
+    justify-content: center;
+}
+
+.section__container {
+    display: flex;
+    gap: 2rem;
+    animation: opacity-slide-down 1s ease-in-out alternate;
+}
+
+.section__container--right {
+    justify-content: flex-end;
+}
+
+.container__icon {
+    font-size: 10rem;
+    color: #111E6C;
+}
+
+.container__content {
+    width: 50%;
+}
+
+.content__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #111E6C;
+    margin-bottom: 1rem;
+}
+
+.content__description {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    overflow-wrap: break-word;
+}
+
+.button-pattern {
+    margin-top: 1rem;
+}

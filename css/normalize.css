@@ -392,3 +392,7 @@ template {
   text-align: center;
   margin-top: 2rem;
 }
+
+.title-pattern--blue {
+  color: #fff;
+}

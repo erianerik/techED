@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #111E6C;
 }
 
 .about-us__section {
@@ -28,7 +29,7 @@
 
 .container__icon {
     font-size: 10rem;
-    color: #111E6C;
+    color: #fff;
 }
 
 .container__content {
@@ -38,13 +39,14 @@
 .content__title {
     font-size: 2.2rem;
     font-weight: bold;
-    color: #111E6C;
+    color: #fff;
     margin-bottom: 1rem;
 }
 
 .content__description {
     font-size: 1.1rem;
     line-height: 2rem;
+    color: #fff;
     overflow-wrap: break-word;
 }
 

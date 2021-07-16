@@ -235,7 +235,7 @@ button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focus
    */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0;
 }
 
 /**
@@ -274,6 +274,7 @@ progress {
 
 textarea {
   overflow: auto;
+  border: none;
 }
 
 /**

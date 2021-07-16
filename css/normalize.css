@@ -390,9 +390,9 @@ template {
   color: #111E6C;
   font-weight: bold;
   text-align: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
-.title-pattern--blue {
+.title-pattern--white {
   color: #fff;
 }

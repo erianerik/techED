@@ -1,12 +1,11 @@
 .services {
     width: 100%;
-    height: 80vh;
-    margin-top: 4rem;
+    height: 75vh;
 }
 
 .services__service-container {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 64px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -51,6 +50,4 @@
 
 .service-card__link {
     color: #192DA1;
-
 }
-

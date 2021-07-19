@@ -9,6 +9,7 @@
 
 .about-us__section {
     width: 80%; 
+    min-width: 800px;
     height: calc(100% - 30px);
     margin: 0 auto;
     display: flex;
@@ -34,6 +35,7 @@
 
 .container__content {
     width: 50%;
+    min-width: 37rem;
 }
 
 .content__title {

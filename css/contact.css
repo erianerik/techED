@@ -53,9 +53,10 @@
     border: none;
     border-bottom: 2px solid#475cd1;
 }
+
 .contact-container__inputs--texarea {
     width: 99%;
-} 
+}
 
 .text-area {
     width: 100%;
@@ -68,4 +69,19 @@
 .button-pattern--size {
     font-size: 1.1rem;
     padding: 0 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact {
+        box-sizing: border-box;
+        height: auto;
+        padding: 1rem .5rem;
+    }
+    .contact__contact-container {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: auto;
+        padding: 1rem 0;
+        gap: 1.4rem;
+    }
 }

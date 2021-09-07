@@ -51,3 +51,15 @@
 .service-card__link {
     color: #192DA1;
 }
+
+@media only screen and (max-width: 900px) {
+    .services {
+        box-sizing: border-box;
+        height: auto;
+        padding: 1rem .5rem;
+    }
+    .services__service-container {
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+}

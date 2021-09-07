@@ -397,3 +397,14 @@ template {
 .title-pattern--white {
   color: #fff;
 }
+
+@media only screen and (max-width: 900px) {
+  .title-pattern {
+    font-size: 2rem;
+    padding-top: initial;
+  }
+  .our-team__team-container {
+    box-sizing: border-box;
+    padding: 1rem 0;
+  }
+}

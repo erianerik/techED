@@ -8,7 +8,7 @@
 }
 
 .about-us__section {
-    width: 80%; 
+    width: 80%;
     min-width: 800px;
     height: calc(100% - 30px);
     margin: 0 auto;
@@ -54,4 +54,37 @@
 
 .button-pattern {
     margin-top: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .about-us {
+        box-sizing: border-box;
+        padding: 1rem .5rem;
+    }
+    .about-us__section {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: auto;
+        margin: unset;
+        justify-content: space-evenly;
+    }
+    .section__container {
+        width: 100%;
+        gap: 1rem;
+    }
+    .container__icon {
+        font-size: 5rem;
+    }
+    .container__content {
+        width: 100%;
+        min-width: auto;
+    }
+    .content__title {
+        font-size: 1.8rem;
+    }
+    .content__description {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin-bottom: .9rem;
+    }
 }

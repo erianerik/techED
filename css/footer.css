@@ -89,3 +89,33 @@
 .footer__logo {
     width: 2.5rem;
 }
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        box-sizing: border-box;
+        height: auto;
+    }
+    .footer__page {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1rem .5rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem 0;
+    }
+    .page__page-footer-container {
+        width: 100%;
+    }
+    .footer__menu-footer {
+        width: 20%;
+    }
+    .footer__social-icon {
+        width: 35%;
+    }
+    .page-footer-container__title-pattern {
+        font-size: 1.1rem;
+    }
+    .menu-footer__items {
+        line-height: 1.7rem;
+    }
+}

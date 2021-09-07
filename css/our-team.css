@@ -54,3 +54,20 @@
 .person-container-social__link-rede:first-child {
     margin-right: 1rem;
 }
+
+@media only screen and (max-width: 900px) {
+    .our-team {
+        box-sizing: border-box;
+        padding: 1rem .5rem;
+        height: 72vh;
+    }
+    .our-team__team-container {
+        width: 100%;
+        height: calc(100% - 30px);
+        padding: 0;
+    }
+    .team-container__card-person-team {
+        width: 19rem;
+        height: 21rem;
+    }
+}

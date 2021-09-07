@@ -60,7 +60,7 @@
     font-size: 1rem;
     letter-spacing: .5rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem;
 }
 
 .main__content-container__text__title {
@@ -108,13 +108,53 @@
     justify-content: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 50%;
-    animation: scale 1s ease alternate infinite;
+}
+.some-service__card:hover {
+    transition: all .6s ease-out;
+    cursor: pointer;
+    animation: scale .5s ease alternate infinite;
 }
 
-.card__icon  {
+.card__icon {
     font-size: 2rem;
     font-weight: 600;
     color: #111E6C;
     margin-bottom: 1rem;
     animation: up-rotate 1s ease-in-out alternate infinite;
+}
+
+@media only screen and (max-width: 900px) {
+    .main__header__logo {
+        width: 4rem;
+        margin: 0rem;
+    }
+    .main__content-container__text {
+        padding: 0;
+        padding: .8rem;
+    }
+    .main__content-container__text__intro {
+        font-size: .85rem;
+    }
+    .main__content-container__text__title {
+        font-size: 2rem;
+    }
+    .main__content-container__text__subtitle {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .some-service {
+        width: 100%;
+        max-width: 27rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .some-service__card {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+    .card__description {
+        font-size: .85rem;
+        font-weight: lighter;
+    }
 }

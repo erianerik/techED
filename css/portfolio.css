@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 2rem;
-
 }
 
 .portfolio__container-templates {
@@ -61,5 +60,14 @@
     .portfolio {
         box-sizing: border-box;
         padding: 1rem .5rem;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .portfolio__container-templates {
+        width: 95%;
+    }
+    .template__image  {
+        height: 10rem;
     }
 }

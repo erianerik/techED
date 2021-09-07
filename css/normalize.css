@@ -407,4 +407,7 @@ template {
     box-sizing: border-box;
     padding: 1rem 0;
   }
+  .button-pattern {
+    margin: 0 auto;
+  }
 }

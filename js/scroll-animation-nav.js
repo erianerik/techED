@@ -1,3 +1,7 @@
+let deviceWidth = window.screen.availWidth;
+let menuMobileItems = $(".nav__list-content");
+let closeMenuMobile = $(".close-menu");
+
 $("nav a").click(element => {
 
     element.preventDefault();
@@ -9,5 +13,11 @@ $("nav a").click(element => {
     $("html, body").animate({
         scrollTop: targetOffset - navHeight
     });
+
+    if(deviceWidth <= 512) {
+        menuMobileItems.fadeOut();
+        closeMenuMobile.fadeOut();
+        $("html").css("overflow", "initial");
+    }
 
 });

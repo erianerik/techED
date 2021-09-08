@@ -52,7 +52,7 @@
 .menu-mobile {
     width: 2rem;
     order: 1;
-    margin-left: .5rem;
+    margin-left: .8rem;
     display: none;
 }
 
@@ -101,7 +101,7 @@
         right: 1.4rem;
     }    
     .nav__list-content__link {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .nav__social {
         width: 55%;

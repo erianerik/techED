@@ -18,4 +18,3 @@ closeMenu.click(() => {
     closeMenu.fadeOut();
     menuContent.fadeOut();
 });
-

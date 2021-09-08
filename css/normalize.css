@@ -398,6 +398,17 @@ template {
   color: #fff;
 }
 
+.animation-section {
+  opacity: 0;
+  transform: translate3d(-130px, 0, 0) ;
+  transition: 2s;
+}
+
+.animation-section-start {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 @media only screen and (max-width: 900px) {
   .title-pattern {
     font-size: 2rem;

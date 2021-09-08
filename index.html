@@ -244,37 +244,37 @@
         </section>
     </section>
 
-    <form action="" class="contact" id="contact">
+    <form class="contact" id="contact" method="POST">
         <h2 class="title-pattern title-pattern--white">Deixe a sua mensagem :)</h2>
 
         <fieldset class="contact__contact-container">
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Nome: </label>
-                <input type="text" class="inputs__input-pattern" placeholder="Ex.: João Carlos">
+                <input type="text" class="inputs__input-pattern required-input" name="name" placeholder="Ex.: João Carlos">
             </section>
 
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Email: </label>
-                <input type="email" class="inputs__input-pattern" placeholder="Ex.: joaocarlos@email.com">
+                <input type="email" class="inputs__input-pattern required-input" name="email" placeholder="Ex.: joaocarlos@email.com">
             </section>
 
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Telefone: </label>
-                <input type="text" class="inputs__input-pattern" placeholder="Ex.: (00) 00000-0000">
+                <input type="text" class="inputs__input-pattern" name="telefone" placeholder="Ex.: (00) 00000-0000">
             </section>
 
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Cidade: </label>
-                <input type="text" class="inputs__input-pattern" placeholder="Ex.: São Paulo">
+                <input type="text" class="inputs__input-pattern" name="city" placeholder="Ex.: São Paulo">
             </section>
 
 
             <section class="contact-container__inputs contact-container__inputs--texarea">
                 <label class="input__label" for="">Mensagem: </label>
-                <textarea name="" id="" class="inputs__input-pattern text-area"></textarea>
+                <textarea name="textarea" class="inputs__input-pattern text-area required-input"></textarea>
             </section>
 
-            <input type="button" class="button-pattern button-pattern--white button-pattern--size" value="Enviar">
+            <input type="button" id="send" class="button-pattern button-pattern--white button-pattern--size" value="Enviar">
 
         </fieldset>
     </form>
@@ -374,6 +374,7 @@
     <script src="./js/splash.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>

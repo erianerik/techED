@@ -415,6 +415,17 @@ template {
   transform: translate3d(0, 0, 0);
 }
 
+.input-error {
+  border-bottom-color: tomato !important;
+}
+
+.required-field-message {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: tomato;
+}
+
 @media only screen and (max-width: 900px) {
   .title-pattern {
     font-size: 2rem;

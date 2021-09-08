@@ -7,7 +7,7 @@ $("nav a").click(element => {
     element.preventDefault();
 
     let navHeight = $(".nav").innerHeight(); 
-    let idLink = $(element.target).parent().attr("href");
+    let idLink = $(element.target).attr("href");
     let targetOffset = $(idLink).offset().top;
 
     $("html, body").animate({

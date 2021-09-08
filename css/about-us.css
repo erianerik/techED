@@ -99,6 +99,7 @@
     }
     .container__icon {
         display: none;
+        font-size: 0;
     }
     .container__content {
         box-sizing: border-box;

@@ -255,12 +255,12 @@
 
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Email: </label>
-                <input type="email" class="inputs__input-pattern required-input" name="email" placeholder="Ex.: joaocarlos@email.com">
+                <input type="email" class="inputs__input-pattern required-input" name="email" placeholder="Ex.: joaocarlos@email.com" required>
             </section>
 
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Telefone: </label>
-                <input type="text" class="inputs__input-pattern" name="telefone" placeholder="Ex.: (00) 00000-0000">
+                <input type="text" id="phone" class="inputs__input-pattern" name="telefone" placeholder="Ex.: (00) 00000-0000">
             </section>
 
             <section class="contact-container__inputs">
@@ -274,7 +274,7 @@
                 <textarea name="textarea" class="inputs__input-pattern text-area required-input"></textarea>
             </section>
 
-            <input type="button" id="send" class="button-pattern button-pattern--white button-pattern--size" value="Enviar">
+            <input type="submit" id="send" class="button-pattern button-pattern--white button-pattern--size" value="Enviar">
 
         </fieldset>
     </form>
@@ -370,6 +370,7 @@
 
     <script src="./js/jquery/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery/jquery-migrate-3.0.0.min.js"></script>
+    <script src="./js/jquery/jquery-mask.js"></script>
     <script src="./js/scroll-animation.js"></script>
     <script src="./js/splash.js"></script>
     <script src="./js/nav.js"></script>

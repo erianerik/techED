@@ -1,5 +1,7 @@
 const stringEmpety = "";
 
+$("#phone").mask("(00) 00000-0000");
+
 let inputClassErro = "input-error"
 let sendButton = $("#send");
 let form = $("#contact");
@@ -18,7 +20,7 @@ function getDataForm(object) {
         object[field.name] = field.value;
     });
 
-    return object = sendData;
+    return object = object;
 }
 
 function validateField() {
@@ -28,18 +30,18 @@ function validateField() {
 }
 
 function controlError(status, element) {
-    $(element).parent().find(".required-field-message").remove();
+    let inputTarget =   $(element);
+    let fieldsetTarget = $(element).parent().find(".required-field-message");
+
+    fieldsetTarget.remove();
     
     if(status) {
-        $(element).addClass(inputClassErro);
-        $(element).parent().append(htmlErrorField);
+        inputTarget.addClass(inputClassErro);
+        inputTarget.parent().append(htmlErrorField);
         return status;
     }else {
-        $(element).removeClass(inputClassErro);
-        $(element).parent().find(".required-field-message").remove();
+        inputTarget.removeClass(inputClassErro);
+        fieldsetTarget.remove();
         return status;
     }
-    
-
-    
 }

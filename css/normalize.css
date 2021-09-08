@@ -379,6 +379,12 @@ template {
   color: #000;
   border-radius: 5px;
   background-color: #fff;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.button-pattern:hover {
+  transform: scale(1.1);
 }
 
 .button-pattern--blue {

@@ -98,7 +98,7 @@
         padding: 2rem 0;
     }
     .container__icon {
-        display: none;
+        display: none !important;
         font-size: 0;
     }
     .container__content {

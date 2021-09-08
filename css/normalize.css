@@ -379,6 +379,12 @@ template {
   color: #000;
   border-radius: 5px;
   background-color: #fff;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.button-pattern:hover {
+  transform: scale(1.1);
 }
 
 .button-pattern--blue {
@@ -407,6 +413,17 @@ template {
 .animation-section-start {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.input-error {
+  border-bottom-color: tomato !important;
+}
+
+.required-field-message {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: tomato;
 }
 
 @media only screen and (max-width: 900px) {

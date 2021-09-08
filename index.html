@@ -78,28 +78,29 @@
             </figure>
 
             <ul class="nav__list-content nav-list-flex">
-                <a href="" class="nav__list-content__link">
-                    <li>Inicio</li>
-                </a>
-                <a href="" class="nav__list-content__link">
+
+                <li>
+                    <a href="#main" class="nav__list-content__link">Inicio</a>
+                </li>
+                <a href="#about-us" class="nav__list-content__link">
                     <li>Sobre Nós</li>
                 </a>
-                <a href="" class="nav__list-content__link">
+                <a href="#services" class="nav__list-content__link">
                     <li>Serviços</li>
                 </a>
-                <a href="" class="nav__list-content__link">
+                <a href="#our-team" class="nav__list-content__link">
                     <li>Nosso Time</li>
                 </a>
-                <a href="" class="nav__list-content__link">
+                <a href="#portfolio" class="nav__list-content__link">
                     <li>Portfólio</li>
                 </a>
-                <a href="" class="nav__list-content__link">
+                <a href="#contact" class="nav__list-content__link">
                     <li>Contato</li>
                 </a>
             </ul>
 
             <ul class="nav__social nav-list-flex">
-                <img src="./img/icons/menu.svg" class="menu-mobile"/>
+                <img src="./img/icons/menu.svg" class="menu-mobile" />
                 <img src="./img/icons/close.svg" class="close-menu" />
 
                 <a href="" class="nav__social__link" target="_blank">
@@ -125,8 +126,8 @@
     <section class="about-us" id="about-us">
         <h2 class="title-pattern title-pattern--white">Sobre nós</h2>
         <section class="about-us__section">
-            <section class="section__container animation-section">
-                <i class="container__icon fas fa-copy animation-section"></i>
+            <section class="section__container">
+                <i class="container__icon fas fa-copy"></i>
                 <section class="container__content">
                     <h3 class="content__title">Sem burocracia</h3>
                     <p class="content__description">A TechED foi criada com o intuito de inserir
@@ -139,14 +140,14 @@
             </section>
 
             <section class="section__container section__container--right">
-                <section class="container__content animation-section">
+                <section class="container__content">
                     <h3 class="content__title">Nossa responsabilidade</h3>
                     <p class="content__description">A equipe TechED está sempre preparada e a disposição para trazer a
                         solução que seu negócio precisa e não te deixar na mão. Estamos em constante melhoria para
                         vencermos os desafios diários.</p>
                     <a href="" class="button-pattern">Saiba mais</a>
                 </section>
-                <i class="container__icon fas fa-hands-helping animation-section"></i>
+                <i class="container__icon fas fa-hands-helping"></i>
             </section>
         </section>
     </section>
@@ -191,7 +192,7 @@
 
         <h2 class="title-pattern title-pattern--white">Nosso time</h2>
 
-        <section class="our-team__team-container animation-section">
+        <section class="our-team__team-container">
             <section class="team-container__card-person-team">
                 <img src="./img/our-team/douglas.png" class="card-person-team__person-image">
                 <h3 class="card-person-team__name">Douglas de Lucena</h3>
@@ -244,37 +245,41 @@
         </section>
     </section>
 
-    <form action="" class="contact" id="contact">
+    <form class="contact" id="contact" method="POST">
         <h2 class="title-pattern title-pattern--white">Deixe a sua mensagem :)</h2>
 
-        <fieldset class="contact__contact-container animation-section">
+        <fieldset class="contact__contact-container">
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Nome: </label>
-                <input type="text" class="inputs__input-pattern" placeholder="Ex.: João Carlos">
+                <input type="text" class="inputs__input-pattern required-input" name="name"
+                    placeholder="Ex.: João Carlos">
             </section>
 
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Email: </label>
-                <input type="email" class="inputs__input-pattern" placeholder="Ex.: joaocarlos@email.com">
+                <input type="email" class="inputs__input-pattern required-input" name="email"
+                    placeholder="Ex.: joaocarlos@email.com" required>
             </section>
 
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Telefone: </label>
-                <input type="text" class="inputs__input-pattern" placeholder="Ex.: (00) 00000-0000">
+                <input type="text" id="phone" class="inputs__input-pattern" name="telefone"
+                    placeholder="Ex.: (00) 00000-0000">
             </section>
 
             <section class="contact-container__inputs">
                 <label class="input__label" for="">Cidade: </label>
-                <input type="text" class="inputs__input-pattern" placeholder="Ex.: São Paulo">
+                <input type="text" class="inputs__input-pattern" name="city" placeholder="Ex.: São Paulo">
             </section>
 
 
             <section class="contact-container__inputs contact-container__inputs--texarea">
                 <label class="input__label" for="">Mensagem: </label>
-                <textarea name="" id="" class="inputs__input-pattern text-area"></textarea>
+                <textarea name="textarea" class="inputs__input-pattern text-area required-input"></textarea>
             </section>
 
-            <input type="button" class="button-pattern button-pattern--white button-pattern--size" value="Enviar">
+            <input type="submit" id="send" class="button-pattern button-pattern--white button-pattern--size"
+                value="Enviar">
 
         </fieldset>
     </form>
@@ -289,44 +294,44 @@
                         melhoria para vencermos os desafios diários.</p>
                 </section>
 
-                <section class="footer__menu-footer">
+                <nav class="footer__menu-footer">
                     <h2 class="page-footer-container__title-pattern">Seções</h2>
                     <ul class="menu-footer__items">
-                        <a href="" class="items__link-footer">
+                        <a href="#main" class="items__link-footer">
                             <li>Inicio</li>
                         </a>
-                        <a href="" class="items__link-footer">
+                        <a href="#about-us" class="items__link-footer">
                             <li>Sobre nós</li>
                         </a>
-                        <a href="" class="items__link-footer">
+                        <a href="#services" class="items__link-footer">
                             <li>Serviços</li>
                         </a>
-                        <a href="" class="items__link-footer">
+                        <a href="#our-team" class="items__link-footer">
                             <li>Nosso time</li>
                         </a>
-                        <a href="" class="items__link-footer">
+                        <a href="#portfolio" class="items__link-footer">
                             <li>Portfólio</li>
                         </a>
-                        <a href="" class="items__link-footer">
+                        <a href="#contact" class="items__link-footer">
                             <li>Contato</li>
                         </a>
                     </ul>
-                </section>
+                </nav>
 
-                <section class="footer__menu-footer">
+                <nav class="footer__menu-footer">
                     <h2 class="page-footer-container__title-pattern">Serviços</h2>
                     <ul class="menu-footer__items">
-                        <a href="" class="items__link-footer">
+                        <a href="#main" class="items__link-footer">
                             <li>Inicio</li>
                         </a>
-                        <a href="" class="items__link-footer">
+                        <a href="#about-us" class="items__link-footer">
                             <li>Sobre nós</li>
                         </a>
-                        <a href="" class="items__link-footer">
+                        <a href="#services" class="items__link-footer">
                             <li>Serviços</li>
                         </a>
                     </ul>
-                </section>
+                </nav>
 
 
 
@@ -370,10 +375,13 @@
 
     <script src="./js/jquery/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery/jquery-migrate-3.0.0.min.js"></script>
-    <script src="./js/scroll-animation.js"></script>
+    <script src="./js/jquery/jquery-mask.js"></script>
     <script src="./js/splash.js"></script>
-    <script src="./js/nav.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/scroll-animation-container.js"></script>
+    <script src="./js/scroll-animation-nav.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>

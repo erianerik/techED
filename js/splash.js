@@ -1,12 +1,15 @@
-$(() => {
+function startSplash() {
+    let timeSplash = Math.floor(Math.random() * (1500 - 1150) + 1150);
 
     $("html").css("overflow", "hidden");
     
     setTimeout(function(){
         $(".splash").fadeOut();
-        window.scrollTo(500, 0);
         $("html").css("overflow", "initial");
-    }, 1500);
-    
+        window.scrollTo(500, 0);
+    }, timeSplash);
+}
 
+$(() => {
+    startSplash(); 
 });

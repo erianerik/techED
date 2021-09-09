@@ -3,7 +3,7 @@ const subMenuClass = ".drop-down__sub-menu";
 
 let nav = $(".nav");
 let auxSubMenu = 0;
-let deviceWidth = $(document).width();
+let deviceWidthNav = $(document).width();
 
 $(window).scroll(() => {
    let scrollPage = $(this).scrollTop();
@@ -20,7 +20,7 @@ function closeSubmenu(element) {
    return  $(subMenuClass, element).stop().slideUp();
 }
 
-if(deviceWidth > 900) {
+if(deviceWidthNav > 900) {
    $(submenuContainer).hover(function () {
       openSubmenu(this);
    },

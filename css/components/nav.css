@@ -26,13 +26,12 @@
 
 .nav__list-content {
     width: 50%;
-    min-width: 34rem;
+    min-width: 37rem;
     justify-content: space-between;
 }
 
 .nav__container__logo {
     width: 10%;
-    min-width: 8rem;
 }
 
 .nav-logo {

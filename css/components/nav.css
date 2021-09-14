@@ -152,6 +152,7 @@
     }
     .nav__social {
         width: 55%;
+        min-width: 12rem;
     }
     .nav__container__logo {
         width: 15%;

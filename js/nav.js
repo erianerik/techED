@@ -1,7 +1,8 @@
-const submenuContainer = ".nav .drop-down";
+const submenuContainer = ".drop-down";
 const subMenuClass = ".drop-down__sub-menu";
 
 let nav = $(".nav");
+let dropDownLink = $("#drop-down-link");
 let auxSubMenu = 0;
 let deviceWidthNav = $(document).width();
 
@@ -27,10 +28,13 @@ if(deviceWidthNav > 900) {
    function () {
       closeSubmenu(this);
    });
-}else {
+} else {
+   dropDownLink.removeClass("link-scroll");
+
    $(submenuContainer).click(function () {
+      debugger
+      auxSubMenu >= 3 ? auxSubMenu = 0 : false;
       auxSubMenu += 1;
       auxSubMenu == 1 ? openSubmenu(this) : closeSubmenu(this);
-      auxSubMenu >= 3 ? auxSubMenu = 0 : false;
    });
 }

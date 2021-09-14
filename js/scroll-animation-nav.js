@@ -2,7 +2,7 @@ let deviceWidth = window.screen.availWidth;
 let menuMobileItems = $(".nav__list-content");
 let closeMenuMobile = $(".close-menu");
 
-$("nav a").click(element => {
+$("nav .link-scroll").click(element => {
 
     element.preventDefault();
 

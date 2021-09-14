@@ -78,8 +78,17 @@
 @keyframes loading-page {
     0% {
         transform: rotate(0deg);
-      }
-      100% {
+    }
+    100% {
         transform: rotate(360deg);
-      }
+    }
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 20px, 0);
+    }
 }

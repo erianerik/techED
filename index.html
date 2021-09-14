@@ -80,18 +80,18 @@
             <ul class="nav__list-content nav-list-flex">
 
                 <li>
-                    <a href="#main" class="nav__list-content__link">Inicio</a>
+                    <a href="#main" class="nav__list-content__link link-scroll">Inicio</a>
                 </li>
 
                 <li>
-                    <a href="#about-us" class="nav__list-content__link"> Sobre Nós </a>
+                    <a href="#about-us" class="nav__list-content__link link-scroll"> Sobre Nós </a>
                 </li>
 
                 <li class="drop-down">
-                        <a href="#services" class="nav__list-content__link drop-down">
-                            Serviços
-                            <i class="fas fa-sort-down drop-down__icon"></i>
-                        </a>
+                    <a href="#services" id="drop-down-link" class="nav__list-content__link link-scroll">
+                        Serviços
+                        <i class="fas fa-sort-down drop-down__icon"></i>
+                    </a>
 
                     <ul class="drop-down__sub-menu">
                         <li>
@@ -114,15 +114,15 @@
                 </li>
 
                 <li>
-                    <a href="#our-team" class="nav__list-content__link">Nosso Time</a>
+                    <a href="#our-team" class="nav__list-content__link link-scroll">Nosso Time</a>
                 </li>
 
                 <li>
-                    <a href="#portfolio" class="nav__list-content__link">Portfólio</a>
+                    <a href="#portfolio" class="nav__list-content__link link-scroll">Portfólio</a>
                 </li>
 
                 <li>
-                    <a href="#contact" class="nav__list-content__link">Contato</a>
+                    <a href="#contact" class="nav__list-content__link link-scroll">Contato</a>
                 </li>
             </ul>
 
@@ -151,7 +151,7 @@
     </nav>
 
     <section class="about-us" id="about-us">
-        <h2 class="title-pattern title-pattern--white">Sobre nós</h2>
+        <h2 class="title-pattern title-pattern">Sobre nós</h2>
         <section class="about-us__section">
             <section class="section__container">
                 <i class="container__icon fas fa-copy"></i>
@@ -161,7 +161,7 @@
                         empresas ao mundo web através da criação da sua Landing Page, de maneira inovadora e sem
                         burocracia. Visamos uma comunicação eficaz com nossos parceiros, afim de desenvolver um
                         atendimento que vá além das expectativas de ambas as partes.</p>
-                    <a href="" class="button-pattern">Saiba mais</a>
+                    <a href="" class="button-pattern button-pattern--blue">Saiba mais</a>
                 </section>
 
             </section>
@@ -172,11 +172,84 @@
                     <p class="content__description">A equipe TechED está sempre preparada e a disposição para trazer a
                         solução que seu negócio precisa e não te deixar na mão. Estamos em constante melhoria para
                         vencermos os desafios diários.</p>
-                    <a href="" class="button-pattern">Saiba mais</a>
+                    <a href="" class="button-pattern button-pattern--blue">Saiba mais</a>
                 </section>
                 <i class="container__icon fas fa-hands-helping"></i>
             </section>
         </section>
+    </section>
+
+    <section class="why-us" id="why-us">
+        <h2 class="title-pattern title-pattern--white">Por que fechar com a EDTech?</h2>
+
+        <section class="why-us__container">
+            <section class="why-us__container__item up">
+
+                <section class="why-us__item__header">
+                    <span class="item__header__icon-background">
+                        <i class="fas fa-handshake item__header__icon"></i>
+                    </span>
+                    <h3 class="item__header__title">Transparência</h3>
+                </section>
+
+                <p class="item__description">O cliente pode acompanhar todos os processos dos serviços apresentados</p>
+
+            </section>
+
+            <section class="why-us__container__item">
+
+                <section class="why-us__item__header">
+                    <span class="item__header__icon-background">
+                        <i class="fas fa-rocket item__header__icon"></i>
+                    </span>
+                    <h3 class="item__header__title">Agilidade sem perder qualidade</h3>
+                </section>
+
+                <p class="item__description">Nossos desenvolvedores trabalham de maneira rápida e profissional.</p>
+
+            </section>
+
+            <section class="why-us__container__item up-middle">
+
+                <section class="why-us__item__header">
+                    <span class="item__header__icon-background">
+                        <i class="fas fa-network-wired item__header__icon"></i>
+                    </span>
+                    <h3 class="item__header__title">Website seguro</h3>
+                </section>
+
+                <p class="item__description">Utilizamos as melhores ferramentas para você não se preocupar</p>
+
+            </section>
+
+            <section class="why-us__container__item">
+
+                <section class="why-us__item__header">
+                    <span class="item__header__icon-background">
+                        <i class="fas fa-lightbulb item__header__icon"></i>
+                    </span>
+                    <h3 class="item__header__title">Site moderno e profissional</h3>
+                </section>
+
+                <p class="item__description">Aplicamos o que há de melhor no mercado para nossas aplicações</p>
+
+            </section>
+
+            <section class="why-us__container__item up">
+
+                <section class="why-us__item__header">
+                    <span class="item__header__icon-background">
+                        <i class="fas fa-hand-holding-heart item__header__icon"></i>
+                    </span>
+                    <h3 class="item__header__title">Garantia Vitalícia</h3>
+                </section>
+
+                <p class="item__description">Garantimos a funcionalidade de todas as funções do site por tempo indeterminado.</p>
+
+            </section>
+
+        </section>
+
     </section>
 
     <section class="services" id="services">
@@ -324,22 +397,22 @@
                 <nav class="footer__menu-footer">
                     <h2 class="page-footer-container__title-pattern">Seções</h2>
                     <ul class="menu-footer__items">
-                        <a href="#main" class="items__link-footer">
+                        <a href="#main" class="items__link-footer link-scroll">
                             <li>Inicio</li>
                         </a>
-                        <a href="#about-us" class="items__link-footer">
+                        <a href="#about-us" class="items__link-footer link-scroll">
                             <li>Sobre nós</li>
                         </a>
-                        <a href="#services" class="items__link-footer">
+                        <a href="#services" class="items__link-footer link-scroll">
                             <li>Serviços</li>
                         </a>
-                        <a href="#our-team" class="items__link-footer">
+                        <a href="#our-team" class="items__link-footer link-scroll">
                             <li>Nosso time</li>
                         </a>
-                        <a href="#portfolio" class="items__link-footer">
+                        <a href="#portfolio" class="items__link-footer link-scroll">
                             <li>Portfólio</li>
                         </a>
-                        <a href="#contact" class="items__link-footer">
+                        <a href="#contact" class="items__link-footer link-scroll">
                             <li>Contato</li>
                         </a>
                     </ul>
@@ -348,10 +421,10 @@
                 <nav class="footer__menu-footer">
                     <h2 class="page-footer-container__title-pattern">Serviços</h2>
                     <ul class="menu-footer__items">
-                        <a href="#main" class="items__link-footer">
+                        <a href="#main" class="items__link-footer link-scroll">
                             <li>Inicio</li>
                         </a>
-                        <a href="#about-us" class="items__link-footer">
+                        <a href="#about-us" class="items__link-footer link-scroll">
                             <li>Sobre nós</li>
                         </a>
                         <a href="#services" class="items__link-footer">

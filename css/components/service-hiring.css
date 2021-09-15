@@ -1,0 +1,150 @@
+.service-hiring {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(17,30,108,1) 50%, rgba(255,255,255,1) 40%);
+}
+
+.service-hiring__header {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.service-hiring__header__description {
+    font-size: 1.2rem;
+}
+
+.service-hiring__content {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 2rem;
+}
+
+.service-hiring__content-container {
+    box-sizing: border-box;
+    width: 27rem;
+    height: auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: #fff;
+}
+
+.service-hiring__content-container__header {
+    box-sizing: border-box;
+    width: 80%;
+    padding-bottom: 2rem;
+    margin: 0 auto;    
+    text-align: center;
+    border-bottom: 1px solid #b6b6b6c4;
+}
+
+.service-hiring__content-container__header-title {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #111e6c;
+}
+
+.service-card__background-icon {
+    display: block;
+    width: 7rem;
+    height: 6.5rem;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(17, 31, 108, 0.856)
+}
+
+.service-hiring-card__icon {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.service-hiring__content-container__header-price {
+    font-size: 1rem;
+    color: #b6b6b6c4;
+}
+
+.main-price {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.service-hiring__content-items {
+    width: 100%;
+    height: auto;
+}
+
+.service-hiring__content-items__content {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: .5rem 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.service-hiring__content-items__content:first-child {
+    padding-top: 2rem;
+}
+
+.service-hiring__content-items__content:last-child {
+    padding-bottom: 2rem;
+}
+
+.service-hiring__content-items__icon {
+    font-size: 1.2rem;
+    color: #b6b6b6c4;
+}
+
+.items__content-description {
+    line-height: 1.5rem;
+}
+
+.price-button {
+    display: inline;
+    width: 80%;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    color: #111e6c;
+    border: 1px solid #111e6c;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.price-button:hover {
+    color: #fff;
+    border: 1px solid #111e6c;
+    background-color: #111e6c;
+}
+
+@media only screen and (max-width: 512px) {
+    .service-hiring__content {
+        gap: 2rem 0;
+    }
+    .service-hiring__header {
+        line-height: initial;
+    }
+    .service-hiring__header__description {
+        margin-top: 1rem;
+    }
+}

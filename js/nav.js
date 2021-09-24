@@ -1,17 +1,21 @@
 const submenuContainer = ".drop-down";
 const subMenuClass = ".drop-down__sub-menu";
+const displayBlock = "block";
 
 let nav = $(".nav");
+let displayNav = nav.css("display");
 let dropDownLink = $("#drop-down-link");
 let auxSubMenu = 0;
 let deviceWidthNav = $(document).width();
 
-$(window).scroll(() => {
-   let scrollPage = $(this).scrollTop();
-   let positionShowNav = 900;
-
-   scrollPage >= positionShowNav ? nav.fadeIn() : nav.fadeOut();
-});
+if(displayNav != displayBlock) {
+   $(window).scroll(() => {
+      let scrollPage = $(this).scrollTop();
+      let positionShowNav = 900;
+      
+      scrollPage >= positionShowNav ? nav.fadeIn() : nav.fadeOut();
+   });
+}
 
 function openSubmenu(element) {
    return $(subMenuClass, element).stop().slideDown();

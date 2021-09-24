@@ -36,7 +36,6 @@ if(deviceWidthNav > 900) {
    dropDownLink.removeClass("link-scroll");
 
    $(submenuContainer).click(function () {
-      debugger
       auxSubMenu += 1;
       auxSubMenu >= 3 ? auxSubMenu = 1 : false;
       auxSubMenu == 1 ? openSubmenu(this) : closeSubmenu(this);

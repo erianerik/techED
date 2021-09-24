@@ -1,7 +1,12 @@
 const stringEmpety = "";
+const contractMessageStorage = "contractMessage"; 
+const contractServiceFlagStorage = "contractServiceFlag"; 
 
 $("#phone").mask("(00) 00000-0000");
 
+let contractServiceFlag = localStorage.getItem(contractServiceFlagStorage);
+let formOffsetContract =  $("#contact").offset().top;
+let inputTextArea = $(".inputs__input-pattern text-area required-input");
 let inputClassErro = "input-error"
 let sendButton = $("#send");
 let form = $("#contact");
@@ -9,11 +14,16 @@ let requiredInput = $(".required-input");
 let htmlErrorField = `<span class="required-field-message">Campo obrigatório!</span>`;
 let sendData = {};
 
-
 sendButton.click(() => {
     getDataForm(sendData);
     validateField();
 });
+
+function runScroll() {
+    $("html, body").animate({
+        scrollTop: formOffsetContract - navHeight
+    });
+}
 
 function getDataForm(object) {
     $.each(form.serializeArray(), (i, field) => {
@@ -45,3 +55,26 @@ function controlError(status, element) {
         return status;
     }
 }
+
+function verifyServiceContract() {
+    debugger;
+    if(contractServiceFlag == 0) {
+        localStorage.setItem(contractServiceFlagStorage, 1);
+        let messageContract = localStorage.getItem(contractMessageStorage);
+
+        if(messageContract != null) {
+            textArea.val(messageContract);
+            textArea.focus();
+    
+            setTimeout(() => {
+                runScroll();
+            }, 1500)
+    
+            return true;
+        } 
+    }
+    
+    localStorage.removeItem(contractMessageStorage);
+}
+
+$(document).ready(verifyServiceContract);

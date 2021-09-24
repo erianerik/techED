@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/components/services/service-style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icones -->
+    <script src="https://kit.fontawesome.com/88a07e5a33.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <section class="nav__container">
+            <figure class="nav__container__logo">
+                <img src="./img/logo.svg" class="nav-logo" />
+            </figure>
+
+            <ul class="nav__list-content nav-list-flex">
+
+                <li>
+                    <a href="#main" class="nav__list-content__link link-scroll">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#about-us" class="nav__list-content__link link-scroll"> Sobre Nós </a>
+                </li>
+
+                <li class="drop-down">
+                    <a href="#services" id="drop-down-link" class="nav__list-content__link link-scroll">
+                        Serviços
+                        <i class="fas fa-sort-down drop-down__icon"></i>
+                    </a>
+
+                    <ul class="drop-down__sub-menu">
+                        <li>
+                            <a>Criação de sites profissionais</a>
+                        </li>
+
+                        <li>
+                            <a>Criação de sites baratos</a>
+                        </li>
+
+                        <li>
+                            <a>Consultoria SEO</a>
+                        </li>
+
+                        <li>
+                            <a>Hospedagem</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#our-team" class="nav__list-content__link link-scroll">Nosso Time</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio" class="nav__list-content__link link-scroll">Portfólio</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav__list-content__link link-scroll">Contato</a>
+                </li>
+            </ul>
+
+            <ul class="nav__social nav-list-flex">
+                <img src="./img/icons/menu.svg" class="menu-mobile" />
+                <img src="./img/icons/close.svg" class="close-menu" />
+
+                <a href="" class="nav__social__link" target="_blank">
+                    <li> <i class="fab fa-facebook-f link__icon"></i> </li>
+                </a>
+                <a href="" class="nav__social__link" target="_blank">
+                    <li> <i class="fab fa-instagram link__icon"></i> </li>
+                </a>
+                <a href="" class="nav__social__link" target="_blank">
+                    <li> <i class="fab fa-whatsapp link__icon"></i> </li>
+                </a>
+                <a href="" class="nav__social__link" target="_blank">
+                    <li> <i class="fab fa-linkedin-in link__icon"></i> </li>
+                </a>
+                <a href="" class="nav__social__link" target="_blank">
+                    <li> <i class="far fa-envelope link__icon"></i> </li>
+                </a>
+            </ul>
+        </section>
+
+    </nav>
+
+    <main class="service">
+        <section class="service__card">
+            <header class="service__card__header">
+                <h1 class="service__card__header__main-title">Criação de sites profissionais</h1>
+                <h2 class="service__card__header__subtitle">Desenvolvimento</h2>
+            </header>
+
+            <section class="service__card__content">
+                <p class="service__card__content__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quod dolor? Delectus nobis odit ratione dolorum. Recusandae nesciunt, provident eos vel, culpa tempore nisi similique ducimus delectus deserunt aliquid sunt?</p>
+            </section>
+
+            <footer class="service__card__footer">
+                <section class="service__card__footer__contact">
+                    <a class="service__card__footer__contact__option background--whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a class="service__card__footer__contact__option background--email"><i class="fas fa-envelope"></i></a>
+                </section>
+
+                <a href="" class="service__card__footer__contact__option submit-service">Contratar</a>
+            </footer>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container">
+            <section class="footer__page">
+                <section class="page__page-footer-container">
+                    <h2 class="page-footer-container__title-pattern">Sobre nós</h2>
+                    <p class="page-footer-container__description">A equipe TechED está sempre preparada e a disposição
+                        para trazer a solução que seu negócio precisa e não te deixar na mão. Estamos em constante
+                        melhoria para vencermos os desafios diários.</p>
+                </section>
+
+                <nav class="footer__menu-footer">
+                    <h2 class="page-footer-container__title-pattern">Seções</h2>
+                    <ul class="menu-footer__items">
+                        <a href="#main" class="items__link-footer link-scroll">
+                            <li>Inicio</li>
+                        </a>
+                        <a href="#about-us" class="items__link-footer link-scroll">
+                            <li>Sobre nós</li>
+                        </a>
+                        <a href="#services" class="items__link-footer link-scroll">
+                            <li>Serviços</li>
+                        </a>
+                        <a href="#our-team" class="items__link-footer link-scroll">
+                            <li>Nosso time</li>
+                        </a>
+                        <a href="#portfolio" class="items__link-footer link-scroll">
+                            <li>Portfólio</li>
+                        </a>
+                        <a href="#contact" class="items__link-footer link-scroll">
+                            <li>Contato</li>
+                        </a>
+                    </ul>
+                </nav>
+
+                <nav class="footer__menu-footer">
+                    <h2 class="page-footer-container__title-pattern">Serviços</h2>
+                    <ul class="menu-footer__items">
+                        <a href="#main" class="items__link-footer link-scroll">
+                            <li>Inicio</li>
+                        </a>
+                        <a href="#about-us" class="items__link-footer link-scroll">
+                            <li>Sobre nós</li>
+                        </a>
+                        <a href="#services" class="items__link-footer">
+                            <li>Serviços</li>
+                        </a>
+                    </ul>
+                </nav>
+
+                <section class="footer__social-icon">
+                    <h2 class="page-footer-container__title-pattern">Mídia Social</h2>
+                    <ul class="social-icon__menu">
+                        <a href="" class="menu__footer-icon-social">
+                            <li><i class="fab fa-facebook-f"></i></li>
+                        </a>
+                        <a href="" class="menu__footer-icon-social">
+                            <li><i class="fab fa-instagram"></i></li>
+                        </a>
+                        <a href="" class="menu__footer-icon-social">
+                            <li> <i class="fab fa-whatsapp"></i></li>
+                        </a>
+                        <a href="" class="menu__footer-icon-social">
+                            <li> <i class="fab fa-linkedin-in"></i></li>
+                        </a>
+                        <a href="" class="menu__footer-icon-social">
+                            <li> <i class="far fa-envelope"></i></li>
+                        </a>
+                    </ul>
+                </section>
+            </section>
+        </section>
+
+        <section class="footer__copyright">
+            <section class="copyright__content">
+                <h3 class="content__text">&copy; teched 2021</h3>
+                <img src="./img/logo.svg" alt="logo tech ED" class="footer__logo">
+                <h3 class="content__text">Siga nos ;)</h3>
+            </section>
+        </section>
+    </footer>
+
+    <section class="splash">
+        <section class="splash-content">
+            <img src="./img/logo.svg" alt="logo tech ED" class="splash-logo">
+        </section>
+    </section>
+
+    <script src="./js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-3.0.0.min.js"></script>
+    <script src="./js/jquery/jquery-mask.js"></script>
+    <script src="./js/splash.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>

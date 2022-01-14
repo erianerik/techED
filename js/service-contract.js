@@ -1,6 +1,6 @@
 const contractMessage = "contractMessage"; 
 const serviceContractServiceFlag = "contractServiceFlag";
-
+localStorage.setItem("countAcess", 0);
 
 let submitService = $(".submit-service");
 let titleService = $(".service__card__header__main-title").html().toLowerCase();

@@ -57,7 +57,6 @@ function controlError(status, element) {
 }
 
 function verifyServiceContract() {
-    debugger;
     if(contractServiceFlag == 0) {
         localStorage.setItem(contractServiceFlagStorage, 1);
         let messageContract = localStorage.getItem(contractMessageStorage);

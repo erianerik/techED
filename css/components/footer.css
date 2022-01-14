@@ -97,6 +97,15 @@
     width: 2.5rem;
 }
 
+.menu-footer__items li a {
+    transition: color .5s ease-in-out;
+    transition: font-weight .1s ease-in-out;
+}
+.menu-footer__items li a:hover {
+    color: #111E6C;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 900px) {
     .footer {
         box-sizing: border-box;

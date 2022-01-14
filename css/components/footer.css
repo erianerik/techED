@@ -52,6 +52,10 @@
     line-height: 2rem;
 }
 
+.menu-footer__items li {
+    cursor: pointer;
+}
+
 .footer__social-icon {
     width: 20%;
 }

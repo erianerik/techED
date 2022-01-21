@@ -41,3 +41,7 @@ if(deviceWidthNav > 900) {
       auxSubMenu == 1 ? openSubmenu(this) : closeSubmenu(this);
    });
 }
+
+$(".nav-logo").click(function(){
+   window.location.href = "/index.html";
+})

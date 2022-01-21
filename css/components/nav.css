@@ -36,6 +36,7 @@
 
 .nav-logo {
     width: 3rem;
+    cursor: pointer !important;
 }
 
 .nav__list-content__link {

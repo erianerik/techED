@@ -20,6 +20,7 @@
 .main__header__logo {
     width: 4rem;
     margin: 1rem;
+    cursor: pointer;
 }
 
 .main__header__social {
@@ -123,6 +124,14 @@
     color: #111E6C;
     margin-bottom: 1rem;
     animation: up-rotate 1s ease-in-out alternate infinite;
+}
+
+.fa-times-circle{
+    color: red !important;
+}
+
+.fa-check-circle{
+    color: green !important;
 }
 
 @media only screen and (max-width: 900px) {

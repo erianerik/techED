@@ -3,7 +3,7 @@ let classAnimationSectionStart = "animation-section-start";
 
 function animationScroll() {
     let documentScrollTop = $(document).scrollTop();
-    let offSet = $(window).height() * 3 / 4 - 75;
+    let offSet = $(window).height() * 3 / 2.8 - 75;
 
     containerContent.each((index, element) => {
         let elementOffSet = $(element).offset().top;
